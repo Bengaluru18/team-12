@@ -31,19 +31,19 @@
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Requests">
-            <a class="nav-link" href="/social_worker_requests">
+            <a class="nav-link" href="social_worker_requests">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">request</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Appointment">
-          <a class="nav-link" href="/sw">
+          <a class="nav-link" href="sw">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Appointment</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Availability">
-          <a class="nav-link" href="/social_worker_booking">
+          <a class="nav-link" href="social_worker_booking">
             <i class="fa fa-fw fa-dashboard"></i>
             <span class="nav-link-text">Booking</span>
           </a>
@@ -65,25 +65,29 @@
         <li class="breadcrumb-item">
           <a href="index.html">Dashboard</a>
         </li>
-        <li class="breadcrumb-item active">Appointments</li>
+        <li class="breadcrumb-item active">Booking an Appointment</li>
       </ol>
       <div class="row">
         <div class="col-12">
-          <h1>Appointment</h1>
-			<table class="table table-bordered">
-    <thead>
-      <tr>
-        <th>Apppointment Time </th>
-        <th>Patient Name</th>
-        <th>Show more </th>
-      </tr>
-    </thead>
-    <tbody>
-      <%for(var i=0; i< data.length ; i++){%>
-          <tr><td><%=data[i].date%></td><td><%=data[i].beneficiaries_id%></td><td><%=data[i].doctor_id%></td></tr>
-      <%}%>
-    </tbody>
-  </table>
+          <h1>Booking an Appointment</h1>
+			<div class="container">
+			
+	<form action="/createApointmentsw" method="post">
+		<div class="form-group">
+		<label for="name">Beneficiary ID</label>
+		<input type="text" class="form-control" id="beneficiary_id" placeholder="beneficiary_id" name="beneficiary_id">
+		</div>
+		<div class="form-group">
+		<label for="Date">Date & time </label>
+		<select id ="datatime" class="form-control" name="datetime">
+    	<%for(var i=0; i<data.length; i++){%>
+        <option value="volvo"><%=data[i]%></option>
+        <%}%>
+		</select>
+		</div>
+		<button type="submit" class="btn btn-default">Submit</button>
+  </form>
+</div>
 </div>
 
         </div>
