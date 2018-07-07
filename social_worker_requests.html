@@ -17,9 +17,9 @@
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-   <!-- Navigation-->
+     <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html">Social Worker</a>
+    <a class="navbar-brand" href="index.html">Dashboard</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -33,22 +33,39 @@
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Requests">
             <a class="nav-link" href="social_worker_requests.html">
             <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">request</span>
+            <span class="nav-link-text">Requests to be cleared</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Appointment">
           <a class="nav-link" href="social_worker_appointment.html">
             <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Appointment</span>
+            <span class="nav-link-text">Upcoming appointments</span>
           </a>
         </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Availability">
           <a class="nav-link" href="social_worker_booking.html">
             <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Booking</span>
+            <span class="nav-link-text">Booking appointments</span>
           </a>
         </li>
-
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Requests">
+            <a class="nav-link" href="child_profile.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Child Profiles</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Requests">
+            <a class="nav-link" href="doctor.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Doctor Profiles</span>
+          </a>
+        </li>
+        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Requests">
+            <a class="nav-link" href="doctor.html">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">History</span>
+          </a>
+        </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -60,13 +77,6 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-      <!-- Breadcrumbs-->
-      <ol class="breadcrumb">
-        <li class="breadcrumb-item">
-          <a href="index.html">Dashboard</a>
-        </li>
-        <li class="breadcrumb-item active">Appointments</li>
-      </ol>
       <div class="row">
         <div class="col-12">
           <h1>Requests</h1>
@@ -74,7 +84,7 @@
     <thead>
       <tr>
         <th>Request who </th>
-	    	<th>patient Id</th>
+		<th>patient Id</th>
         <th>Patient Name</th>
 		<th>Requested by</th>
 		<th>Action</th>
@@ -109,7 +119,7 @@
     <a class="scroll-to-top rounded" href="#page-top">
       <i class="fa fa-angle-up"></i>
     </a>
-
+    
 	<!-- Logout Modal-->
     <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
       <div class="modal-dialog" role="document">
@@ -128,7 +138,7 @@
         </div>
       </div>
     </div>
-
+	
     <!-- Bootstrap core JavaScript-->
     <script src="vendor/jquery/jquery.min.js"></script>
     <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
