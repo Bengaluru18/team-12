@@ -68,27 +68,32 @@
       <!-- Breadcrumbs-->
       <div class="row">
         <div class="col-12">
-          <h1>Requests</h1>
+          <h1>Children Profile</h1>
 			<table class="table table-bordered">
     <thead>
       <tr>
-        <th>Patient Name</th>
-        <th>Doctor</th>
-        <th>Time Slot</th>
+        <th>Name</th>
+        <th>Registration Number</th>
+        <th>Age</th>
+        <th>Date of Birth</th>
+        <th>Phone Number</th>
+        <th>Current Class</th>
+        <th>Additional comments</th>
       </tr>
     </thead>
     <tbody>
-  
+
     <% for(var i=0; i < data.length; i++) { %>
       <tr>
-        <td><%= data[i].beneficiaries_id %></td>
+        <td><%= data[i].name %></td>
+        <td>null</td>
+        <td>null</td>
+        <td><%= data[i].dob %></td>
+        <td><%= data[i].phoneno %></td>
+        <td>null</td>
         <td><%= data[i].doctor_id %></td>
-        <td><%= data[i].date %></td>
-          <td><a type="button" class="btn btn-link" href="/approve/<%=data[i].beneficiaries_id%>">Approve</a></td>
-          <td><a type="button" class="btn btn-link" href="/disprove/<%=data[i].beneficiaries_id%>">Decline</a></td>
       </tr>
     <% } %>
-
     </tbody>
   </table>
 </div>
