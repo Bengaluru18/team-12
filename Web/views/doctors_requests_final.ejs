@@ -1,5 +1,7 @@
+
 <!DOCTYPE html>
 <html lang="en">
+
 
 <head>
   <meta charset="utf-8">
@@ -17,9 +19,9 @@
 </head>
 
 <body class="fixed-nav sticky-footer bg-dark" id="page-top">
-   <!-- Navigation-->
+  <!-- Navigation-->
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top" id="mainNav">
-    <a class="navbar-brand" href="index.html">Social Worker</a>
+    <a class="navbar-brand" href="index.html">Docter Dashboard</a>
     <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -30,30 +32,26 @@
             <img src="" class="img-circle" id ="image_id">
           </a>
         </li>
+		<li class="nav-item" data-toggle="tooltip" data-placement="right" title="Appointment">
+          <a class="nav-link" href="/appointments">
+            <i class="fa fa-fw fa-dashboard"></i>
+            <span class="nav-link-text">Upcoming Appointments</span>
+          </a>
+        </li>
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Requests">
-            <a class="nav-link" href="social_worker_requests">
+            <a class="nav-link" href="/pendingApprovals">
             <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">request</span>
+            <span class="nav-link-text">Pending Approval</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Appointment">
-          <a class="nav-link" href="sw">
-            <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Appointment</span>
-          </a>
-        </li>
+        
         <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Availability">
-          <a class="nav-link" href="social_worker_booking">
+          <a class="nav-link" href="/doctors_availability">
             <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">Booking</span>
+            <span class="nav-link-text">Availability</span>
           </a>
         </li>
-        <li class="nav-item" data-toggle="tooltip" data-placement="right" title="Availability">
-          <a class="nav-link" href="/child_profiles">
-            <i class="fa fa-fw fa-dashboard"></i>
-            <span class="nav-link-text">child profiles</span>
-          </a>
-        </li>
+        
       </ul>
       <ul class="navbar-nav ml-auto">
         <li class="nav-item">
@@ -65,30 +63,30 @@
   </nav>
   <div class="content-wrapper">
     <div class="container-fluid">
-      <!-- Breadcrumbs-->
-      <div class="row">
+            <div class="row">
         <div class="col-12">
-          <h1>Requests</h1>
+          <h1>Pendings</h1>
 			<table class="table table-bordered">
     <thead>
       <tr>
+		<th>date</th>
+        <th>time</th>
+		<th>patient Id</th>
         <th>Patient Name</th>
-        <th>Doctor</th>
-        <th>Time Slot</th>
+		<th>Action</th>
       </tr>
     </thead>
     <tbody>
-  
-    <% for(var i=0; i < data.length; i++) { %>
       <tr>
-        <td><%= data[i].beneficiaries_id %></td>
-        <td><%= data[i].doctor_id %></td>
-        <td><%= data[i].date %></td>
-          <td><a type="button" class="btn btn-link" href="/approve/<%=data[i].beneficiaries_id%>">Approve</a></td>
-          <td><a type="button" class="btn btn-link" href="/disprove/<%=data[i].beneficiaries_id%>">Decline</a></td>
-      </tr>
-    <% } %>
+	  <td>dsgdg</td>
+	  <td>John</td>
+		<td>21214124</td>
+        <td>Doe</td>
 
+        <td>
+		<button type="button" class="btn btn-link"action="details">More info</button><br>
+		<button type="button" class="btn btn-link"action="decline" color="red">Decline</button>
+		</td
     </tbody>
   </table>
 </div>
