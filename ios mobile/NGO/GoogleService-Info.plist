@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>AD_UNIT_ID_FOR_BANNER_TEST</key>
+	<string>ca-app-pub-3940256099942544/2934735716</string>
+	<key>AD_UNIT_ID_FOR_INTERSTITIAL_TEST</key>
+	<string>ca-app-pub-3940256099942544/4411468910</string>
+	<key>CLIENT_ID</key>
+	<string>205001165955-g2mbgk37p29spdtiio38ovv1d3t6dbns.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.205001165955-g2mbgk37p29spdtiio38ovv1d3t6dbns</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCpb7CyI-Tvo4orYduMRHmphLy_gSC9LKw</string>
+	<key>GCM_SENDER_ID</key>
+	<string>205001165955</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.bedi.NGO</string>
+	<key>PROJECT_ID</key>
+	<string>ssksolution-cb1ff</string>
+	<key>STORAGE_BUCKET</key>
+	<string>ssksolution-cb1ff.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<true></true>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<false></false>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:205001165955:ios:53f1742e0e17d91a</string>
+	<key>DATABASE_URL</key>
+	<string>https://ssksolution-cb1ff.firebaseio.com</string>
+</dict>
+</plist>
