@@ -234,4 +234,33 @@ router.post('/doctors_availability',function (req,res) {
 });
 
 
+router.get("/appointments", function(req, res, next){
+  console.log("hello")
+  database.ref('/appointments').once('value').then(function (snapshot) {
+    l=[]
+    snapshot.forEach(function (element) {
+
+        l.push({date:element.val().date,idp:element.val().beneficiaries_id})
+
+    });
+    res.render('docter',{list:l});
+}) 
+;})
+
+router.get("/pendingApprovals", function(req, res, next){
+  res.render("doctors_requests_final", {});
+})
+
+router.get("/child_profiles", function(req, res, next){
+  database.ref('/profiles/beneficiaries').once('value').then(function(snapshot) {
+    var datapassed = [];
+    snapshot.forEach(function(element){
+      console.log(element.val());
+      var data = element.val();
+      datapassed.push(data);
+    })
+    res.render("sw_children_profile", {data : datapassed});
+  });
+})
+
 module.exports = router;
