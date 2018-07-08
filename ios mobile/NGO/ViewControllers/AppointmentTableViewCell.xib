@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="101" id="KGk-i7-Jjw" customClass="AppointmentTableViewCell" customModule="NGO" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="101"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="AppointmentTableViewCell" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="100.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Patient's Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xka-Yo-I4M">
+                        <rect key="frame" x="16" y="11" width="116" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Doctor's Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ndy-6M-V8g">
+                        <rect key="frame" x="16" y="40" width="115" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Timings" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Meh-b4-HSw">
+                        <rect key="frame" x="16" y="71" width="61" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="daz-2e-lBR">
+                        <rect key="frame" x="152" y="11" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuX-FG-3wK">
+                        <rect key="frame" x="152" y="41" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BPi-bM-xiF">
+                        <rect key="frame" x="152" y="71" width="42" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BPi-bM-xiF" firstAttribute="top" secondItem="iuX-FG-3wK" secondAttribute="bottom" constant="9" id="49v-Fh-QHJ"/>
+                    <constraint firstItem="Meh-b4-HSw" firstAttribute="top" secondItem="ndy-6M-V8g" secondAttribute="bottom" constant="10" id="6u7-6T-DyT"/>
+                    <constraint firstItem="daz-2e-lBR" firstAttribute="leading" secondItem="Xka-Yo-I4M" secondAttribute="trailing" constant="20" id="D4N-25-FvZ"/>
+                    <constraint firstItem="Meh-b4-HSw" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="JOn-3m-bPk"/>
+                    <constraint firstAttribute="trailing" secondItem="BPi-bM-xiF" secondAttribute="trailing" constant="126" id="Khf-NU-FuJ"/>
+                    <constraint firstItem="iuX-FG-3wK" firstAttribute="top" secondItem="daz-2e-lBR" secondAttribute="bottom" constant="9" id="LS1-TS-J6r"/>
+                    <constraint firstItem="iuX-FG-3wK" firstAttribute="leading" secondItem="ndy-6M-V8g" secondAttribute="trailing" constant="21" id="Npq-e1-YW6"/>
+                    <constraint firstAttribute="trailing" secondItem="iuX-FG-3wK" secondAttribute="trailing" constant="126" id="RWs-KR-seQ"/>
+                    <constraint firstItem="Xka-Yo-I4M" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="VGP-Sd-9rQ"/>
+                    <constraint firstItem="BPi-bM-xiF" firstAttribute="leading" secondItem="Meh-b4-HSw" secondAttribute="trailing" constant="75" id="WA9-hv-Rlv"/>
+                    <constraint firstItem="ndy-6M-V8g" firstAttribute="top" secondItem="Xka-Yo-I4M" secondAttribute="bottom" constant="8" id="ZGj-H5-lfB"/>
+                    <constraint firstItem="daz-2e-lBR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="l2s-az-h1q"/>
+                    <constraint firstItem="Xka-Yo-I4M" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="sHc-8B-ojH"/>
+                    <constraint firstItem="ndy-6M-V8g" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="zw4-Vf-fEh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="doctorName" destination="iuX-FG-3wK" id="tZ6-76-sB0"/>
+                <outlet property="patientName" destination="daz-2e-lBR" id="8lG-Wv-hwX"/>
+                <outlet property="timing" destination="BPi-bM-xiF" id="ZEc-hW-CtR"/>
+            </connections>
+            <point key="canvasLocation" x="-72" y="89.5"/>
+        </tableViewCell>
+    </objects>
+</document>
