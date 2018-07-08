@@ -1,0 +1,171 @@
+{
+  "appointments" : {
+    "AMD1" : {
+      "beneficiaries_id" : "pat1",
+      "date" : "\"date :01/07/2016 from 1 to 2",
+      "doctor_id" : "doc1",
+      "is_approved" : false,
+      "is_cancelled" : false,
+      "is_completed" : true
+    },
+    "AMD2" : {
+      "beneficiaries_id:" : "pat2",
+      "date" : "\"date :03/07/2016 from 3 to 5",
+      "doctor_id:" : "doc2",
+      "is_approved" : false,
+      "is_cancelled" : false,
+      "is_completed" : true
+    },
+    "AMD3" : {
+      "beneficiaries_id" : "pat3",
+      "date" : "\"date :01/07/2016 from 2 to 3",
+      "doctor_id" : "doc1",
+      "is_approved" : false,
+      "is_cancelled" : "false",
+      "is_completed" : "false"
+    },
+    "AMD4" : {
+      "beneficiaries_id" : "pat4",
+      "date" : "\"date :03/07/2016 from 4 to 5",
+      "doctor_id" : "doc2",
+      "is_approved" : true,
+      "is_cancelled" : false,
+      "is_completed" : false
+    },
+    "AMD5" : {
+      "benificiaries_id" : "pat5",
+      "date" : "\"date :02/07/2016 from 11 to 1",
+      "doctor_id" : "doc2",
+      "is_approval" : true,
+      "is_cancelled" : false,
+      "is_completed" : true
+    },
+    "AMD9" : {
+      "beneficiaries_id" : "12345",
+      "date" : "date :01/05/2018 from 1 to 3",
+      "doctor_id" : "jk",
+      "is_approved" : "true",
+      "is_cancelled" : "false",
+      "is_completed" : "true"
+    }
+  },
+  "login" : {
+    "doc1" : {
+      "password" : "123",
+      "type" : "doctor"
+    },
+    "doc2" : {
+      "password" : "123",
+      "type" : "doctor"
+    },
+    "doc3" : {
+      "password" : "123",
+      "type" : "doctor"
+    },
+    "pat1" : {
+      "password" : "123",
+      "type" : "benificiary"
+    },
+    "rec1" : {
+      "password" : 123,
+      "type" : "receptionist"
+    },
+    "sw1" : {
+      "password" : 123,
+      "type" : "sw"
+    },
+    "sw2" : {
+      "password" : 123,
+      "type" : "sw"
+    }
+  },
+  "profiles" : {
+    "beneficiaries" : {
+      "pat1" : {
+        "appoitment_ids" : {
+          "AMD1" : "finshed",
+          "AMD2" : "canceled"
+        },
+        "dob" : "1/2/1997",
+        "medical_history" : "random data",
+        "name" : "nehal",
+        "phoneno" : "1244523244"
+      },
+      "pat3" : {
+        "appoitment_ids" : "random data",
+        "availability" : "",
+        "medical_history" : "random data",
+        "name" : "ram",
+        "phoneno" : "988878293"
+      },
+      "pat48" : {
+        "availability" : "empty",
+        "dob" : "11/05/2005",
+        "medical_history" : "autism",
+        "name" : "jack",
+        "phoneno" : "98302330923"
+      },
+      "pat49" : {
+        "availability" : "empty",
+        "dob" : "11/05/2015",
+        "medical_history" : "dyskinesia",
+        "name" : "jack",
+        "phoneno" : "98302330923"
+      },
+      "pat5" : {
+        "availability" : "empty",
+        "medical_history" : "emtpy",
+        "name" : "ram",
+        "phoneno" : "1244sdf"
+      },
+      "pat50" : {
+        "availability" : "empty",
+        "dob" : "07/10/1999",
+        "medical_history" : "emtpy",
+        "name" : "Xyz ",
+        "phoneno" : "12345678980"
+      },
+      "pat9" : {
+        "availability" : "empty",
+        "dob" : "07/10/1999",
+        "medical_history" : "emtpy",
+        "name" : "Xyz ",
+        "phoneno" : "12345678980"
+      }
+    },
+    "doctor" : {
+      "doc1" : {
+        "availableDate" : "01/05/2018",
+        "availableTime" : "1to3",
+        "designation" : "Speech Therapist and Audiologist",
+        "name" : "Varun"
+      },
+      "doc2" : {
+        "availableDate" : "03/05/2018",
+        "availableTime" : "3to5",
+        "designation" : "Orthopedic Surgeon",
+        "name" : "Sid"
+      },
+      "doc3" : {
+        "availableDate" : "02/05/2018",
+        "availableTime" : "11to1",
+        "designation" : "neurologists",
+        "name" : "Arun"
+      }
+    },
+    "receptionist" : {
+      "name " : "value"
+    },
+    "sw" : {
+      "name" : "Sneha",
+      "sw1" : {
+        "name" : "Tanay"
+      }
+    }
+  },
+  "users" : {
+    "email" : "hell@gmail.com",
+    "profile_picture" : "someurl",
+    "username" : "hello"
+  }
+}
