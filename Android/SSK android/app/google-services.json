@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "712668014834",
+    "firebase_url": "https://pertcpm-fb5ec.firebaseio.com",
+    "project_id": "pertcpm-fb5ec",
+    "storage_bucket": "pertcpm-fb5ec.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:712668014834:android:4b3c7505bd38d686",
+        "android_client_info": {
+          "package_name": "com.example.swaroop.pertcpm"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "712668014834-ued77n6pd1crgm411bdjc767316fj0o3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.swaroop.pertcpm",
+            "certificate_hash": "b80cf078b07a913952f1c4d018e6849e70fad914"
+          }
+        },
+        {
+          "client_id": "712668014834-kp0kqjebqqjvjec93668euva81vaoh18.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCi5W2KGJuDnuZQ-XwMrwNR6IaZLZSAw3s"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "712668014834-kp0kqjebqqjvjec93668euva81vaoh18.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
